@@ -8,7 +8,7 @@ Other universes are registered as well, such as **DC Universe** and **Marvel Cin
 You can change the SQL commands to filter by other Universe.
 
 
-# Install
+## Install
 
 The Database uses the Alasql library; the code uses Babel for ES6 and mocha for testing.
 
@@ -19,7 +19,7 @@ npm test
 
 Check out the [Alasql official github](https://github.com/agershun/alasql) if you are using "plain" javascript (not using Node).
 
-# Usages
+## Usages
 
 - Each attribute is described by a single table
 - In each table, there is the Character ID named `char`
@@ -30,15 +30,20 @@ Check out the [Alasql official github](https://github.com/agershun/alasql) if yo
 - `var` and `varLabel` is just a standard way to query from the Wikidata
 
 ```javascript
-let result = marvelDB.exec('SELECT DISTINCT genderLabel FROM gender');
-console.table(result);
+let query = marvelDB.exec('SELECT DISTINCT genderLabel FROM gender');
+console.table(query);
 ```
 
 ```javascript
-let result = marvelDB.exec(
+let query = marvelDB.exec(
     'SELECT gender.genderLabel as gender, COUNT(DISTINCT abilities.abilityLabel) as abilities\
      FROM gender LEFT JOIN abilities ON abilities.char = gender.char\
      GROUP BY gender.genderLabel'
 );
-console.table(result);
+console.table(query);
 ```
+
+
+## Contributions
+
+Feel free to contact me and improve this data set.
