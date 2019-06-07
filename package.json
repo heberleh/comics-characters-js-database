@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/heberleh/comics-characters-js-database#readme",
   "dependencies": {
-    "alasql": "0.4.11"
+    "alasql": "0.4.11"    
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -28,6 +28,7 @@
     "@babel/register": "^7.4.4",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
+    "console.table": "^0.10.0",
     "mocha": "^6.1.4",
     "nodemon": "^1.19.1"
   }
