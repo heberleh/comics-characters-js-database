@@ -7,6 +7,7 @@ The current code filters the Comics Characters for the ones that are in the **Ma
 Other universes are registered as well, such as **DC Universe** and **Marvel Cinematic Universe**.
 You can change the SQL commands to filter by other Universe.
 
+Article: https://towardsdatascience.com/create-a-marvel-database-with-sql-and-javascript-the-easy-way-573ccdf44673
 
 ## Install
 
